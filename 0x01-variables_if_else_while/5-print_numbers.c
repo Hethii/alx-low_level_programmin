@@ -15,10 +15,10 @@ int main(void)
 
 	while (a < 10)
 	{
-		printf("%d", a)
+		printf("%d", a);
 		ch++;
 	}
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
