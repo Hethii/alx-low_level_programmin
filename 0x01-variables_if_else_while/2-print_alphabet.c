@@ -3,7 +3,7 @@
 /*
  *  main -  Entry point
  *
- *  Decription: print alphabets in lower cases
+ *  Description: print alphabets in lower cases
  *
  *  Return: Always 0 {successful}
  *
@@ -20,5 +20,5 @@ int main(void)
 	}
 	putchar('\n');
 
-	return(0);
+	return (0);
 }
