@@ -4,7 +4,7 @@
  *  main -  Entry point
  *
  *  Description: print 0-9 using putchar
- *  		 while using int variabl
+ *		 while using int variabl
  *
  *  Return: Always 0 {successful}
  *
