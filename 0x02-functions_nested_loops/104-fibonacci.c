@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.hi"
 
 /**
  * numLength - returns the length of string
@@ -10,7 +10,7 @@
  */
 
 int numLength(int num)
-{	
+{
 	int length = 0;
 
 	if (!num)
@@ -19,13 +19,15 @@ int numLength(int num)
 	while (num)
 	{
 		num = num / 10;
-		length += 1;	
+		length += 1;
 	}
 
 	return (length);
 }
 
-/** main - Entry point
+/** 
+ * main - Entry point
+ *
  * Description: prints the first 98 Fibonacci numbers
  * starting with 1 and 2 followed by a new line
  *
