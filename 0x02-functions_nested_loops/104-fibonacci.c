@@ -25,7 +25,7 @@ int numLength(int num)
 	return (length);
 }
 
-/** 
+/**
  * main - Entry point
  *
  * Description: prints the first 98 Fibonacci numbers
