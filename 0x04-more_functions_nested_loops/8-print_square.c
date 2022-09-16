@@ -7,7 +7,7 @@
  * Return: a square  line
  */
 
-void print_sqaure(int size)
+void print_square(int size)
 {
 	int co, hash;
 
@@ -19,8 +19,7 @@ void print_sqaure(int size)
 	{
 		for (co = 1; co <= size; co++)
 		{
-			_putchar('#');
-			for (hash = 2; hash <= size; hash++)
+			for (hash = 1; hash <= size; hash++)
 			{
 				_putchar('#');
 			}
