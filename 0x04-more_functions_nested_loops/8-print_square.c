@@ -19,7 +19,8 @@ void print_sqaure(int size)
 	{
 		for (co = 1; co <= size; co++)
 		{
-			for (hash = 1; hash <= size; hash++)
+			_putchar('#');
+			for (hash = 2; hash <= size; hash++)
 			{
 				_putchar('#');
 			}
