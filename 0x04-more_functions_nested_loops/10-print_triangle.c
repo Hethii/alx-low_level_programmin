@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * print_square - print a triangle
+ * print_triangle - prints a triangle
  *
- * @size: is the number of times the # character
- * Return: a triangle line
+ * @size: size of the triangle
+ *
+ * Return: Always 0 (Success)
  */
 
 void print_triangle(int size)
