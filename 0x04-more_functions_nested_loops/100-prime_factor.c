@@ -7,7 +7,7 @@
  * @x: input number
  *
  * Return: square root of x
- */
+*/
 
 double _sqrt(double x)
 {
@@ -28,7 +28,7 @@ double _sqrt(double x)
  * prime factor of number (num)
  *
  * @num: number to find
- */
+*/
 
 void largest_prime_factor(long int num)
 {
@@ -56,8 +56,8 @@ void largest_prime_factor(long int num)
 /**
  * main - Entry point
  *
- * Return -  Always 0 (Success)
- */
+ * Return - Always 0 (Success)
+*/
 
 int main(void)
 {
