@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_array - prints n elements of an array of integers.
  *
  *
  * @n: elements parameter input
