@@ -18,12 +18,12 @@ int do_sqrt_recursion(int n, int r)
 	return (do_sqrt_recursion(n, r + 1));
 }
 
-	/**
-	 * _sqrt_recursion - returns the square root of x
-	 * @n: the number to root
-	 *
-	 * Return: the integer result, -1 on error
-	 */
+/**
+* _sqrt_recursion - returns the square root of x
+* @n: the number to root
+*
+* Return: the integer result, -1 on error
+*/
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
