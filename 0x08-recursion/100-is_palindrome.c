@@ -39,5 +39,6 @@ int do_is_palindrome(char *s, int l, int i)
 int is_palindrome(char *s)
 {
 	int l = _strlen(s);
+
 	return (do_is_palindrome(s, l, 0));
 }
