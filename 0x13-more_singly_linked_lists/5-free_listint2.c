@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * main - free_listint2 - a function that frees the list and sets head to NULL
+ * free_listint2 - a function that frees the list and sets head to NULL
  *
  * @head: pointer to the first node
  *
