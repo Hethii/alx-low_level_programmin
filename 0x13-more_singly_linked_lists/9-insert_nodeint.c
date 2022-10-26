@@ -4,40 +4,44 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - deletes a node
- * @head: linked list at head
- * @index: index of deleted node
- * Return: boolean
+ * insert_nodeint_at_index - inserts node at index
+ * @head: linked list
+ * @idx: index of node
+ * @n: value of head
+ * Return: newly added node
  */
 
-int delete_nodeint_at_index(listint_t **head, unsigned int index)
+listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *tmp, *_delete;
 	unsigned int count = 0;
+	listint_t *tmp, *new;
+
+	if (head == NULL)
+		return (NULL)
 
 	tmp = *head;
-	if (*head == NULL)
-		return (-1);
-	if (index == 0)
+	while (tmp != NULL && count != idx - 1)
 	{
 		tmp = tmp->next;
-		free(*head);
-		*head = tmp;
-		return (1);
+		count++;
+	}
+
+	if (count != idx - 1 && idx != 0)
+		return (NULL);
+
+	new = malloc(sizeof(listint_t));
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+	if (idx != 0)
+	{
+		new->next = tmp->next;
+		tmp->next = new;
 	}
 	else
 	{
-		while (tmp != NULL && count != index - 1)
-		{
-			count++;
-			tmp = tmp->next;
-		}
-		if (count != index - 1)
-			return (-1);
-		_delete = tmp->next;
-		tmp->next = tmp->next->next;
-		free(_delete);
-		return (1);
+		new->next = *head;
+		*head = new;
 	}
-
+	return (new);
 }
